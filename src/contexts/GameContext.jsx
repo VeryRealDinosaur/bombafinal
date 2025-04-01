@@ -24,7 +24,7 @@ export const GameProvider = ({ children }) => {
     // Connect to the server
     useEffect(() => {
         // Use the local network IP where your server is running
-        const newSocket = io('http://192.168.x.x:3001'); // Replace with your actual IP
+        const newSocket = io('https://bombafinal.onrender.com'); // Replace with your actual IP
 
         newSocket.on('connect', () => {
             console.log('Connected to server');
